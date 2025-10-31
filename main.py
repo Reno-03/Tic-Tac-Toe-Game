@@ -5,7 +5,7 @@ import random
 
 def main():
     # setting board values using dictionary
-    chessboard_dict = {
+    board = {
         'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
         'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
         'low-L': ' ', 'low-M': ' ', 'low-R': ' '
@@ -13,49 +13,49 @@ def main():
 
     # game conditions for X and O players and returns X or O respectively
     def game_conditions():
-        if chessboard_dict['top-L'] == "X" and chessboard_dict['top-M'] == "X" and chessboard_dict['top-R'] == "X":
+        if board['top-L'] == "X" and board['top-M'] == "X" and board['top-R'] == "X":
             return "X"
-        elif chessboard_dict['mid-L'] == "X" and chessboard_dict['mid-M'] == "X" and chessboard_dict['mid-R'] == "X":
+        elif board['mid-L'] == "X" and board['mid-M'] == "X" and board['mid-R'] == "X":
             return "X"
-        elif chessboard_dict['low-L'] == "X" and chessboard_dict['low-M'] == "X" and chessboard_dict['low-R'] == "X":
+        elif board['low-L'] == "X" and board['low-M'] == "X" and board['low-R'] == "X":
             return "X"
-        elif chessboard_dict['top-L'] == "X" and chessboard_dict['mid-L'] == "X" and chessboard_dict['low-L'] == "X":
+        elif board['top-L'] == "X" and board['mid-L'] == "X" and board['low-L'] == "X":
             return "X"
-        elif chessboard_dict['top-M'] == "X" and chessboard_dict['mid-M'] == "X" and chessboard_dict['low-M'] == "X":
+        elif board['top-M'] == "X" and board['mid-M'] == "X" and board['low-M'] == "X":
             return "X"
-        elif chessboard_dict['top-R'] == "X" and chessboard_dict['mid-R'] == "X" and chessboard_dict['low-R'] == "X":
+        elif board['top-R'] == "X" and board['mid-R'] == "X" and board['low-R'] == "X":
             return "X"
-        elif chessboard_dict['top-L'] == "X" and chessboard_dict['mid-M'] == "X" and chessboard_dict['low-R'] == "X":
+        elif board['top-L'] == "X" and board['mid-M'] == "X" and board['low-R'] == "X":
             return "X"
-        elif chessboard_dict['top-R'] == "X" and chessboard_dict['mid-M'] == "X" and chessboard_dict['low-L'] == "X":
+        elif board['top-R'] == "X" and board['mid-M'] == "X" and board['low-L'] == "X":
             return "X"
 
-        elif chessboard_dict['top-L'] == "O" and chessboard_dict['top-M'] == "O" and chessboard_dict['top-R'] == "O":
+        elif board['top-L'] == "O" and board['top-M'] == "O" and board['top-R'] == "O":
             return "O"
-        elif chessboard_dict['mid-L'] == "O" and chessboard_dict['mid-M'] == "O" and chessboard_dict['mid-R'] == "O":
+        elif board['mid-L'] == "O" and board['mid-M'] == "O" and board['mid-R'] == "O":
             return "O"
-        elif chessboard_dict['low-L'] == "O" and chessboard_dict['low-M'] == "O" and chessboard_dict['low-R'] == "O":
+        elif board['low-L'] == "O" and board['low-M'] == "O" and board['low-R'] == "O":
             return "O"
-        elif chessboard_dict['top-L'] == "O" and chessboard_dict['mid-L'] == "O" and chessboard_dict['low-L'] == "O":
+        elif board['top-L'] == "O" and board['mid-L'] == "O" and board['low-L'] == "O":
             return "O"
-        elif chessboard_dict['top-M'] == "O" and chessboard_dict['mid-M'] == "O" and chessboard_dict['low-M'] == "O":
+        elif board['top-M'] == "O" and board['mid-M'] == "O" and board['low-M'] == "O":
             return "O"
-        elif chessboard_dict['top-R'] == "O" and chessboard_dict['mid-R'] == "O" and chessboard_dict['low-R'] == "O":
+        elif board['top-R'] == "O" and board['mid-R'] == "O" and board['low-R'] == "O":
             return "O"
-        elif chessboard_dict['top-L'] == "O" and chessboard_dict['mid-M'] == "O" and chessboard_dict['low-R'] == "O":
+        elif board['top-L'] == "O" and board['mid-M'] == "O" and board['low-R'] == "O":
             return "O"
-        elif chessboard_dict['top-R'] == "O" and chessboard_dict['mid-M'] == "O" and chessboard_dict['low-L'] == "O":
+        elif board['top-R'] == "O" and board['mid-M'] == "O" and board['low-L'] == "O":
             return "O"
 
     # input validator to check whether the user-made input is valid
     # for the game
     def input_validator(data):
-        if data not in chessboard_dict.keys():
+        if data not in board.keys():
             print('\ninvalid input...')
             time.sleep(0.6)
             return 1
 
-        elif chessboard_dict[data] != ' ':
+        elif board[data] != ' ':
             print('\nthere\'s already a value...')
             time.sleep(0.6)
             return 1
@@ -63,11 +63,11 @@ def main():
     # a function to print the board using the dictionary-based key and values
     def print_board():
         print('')
-        print(f"{chessboard_dict['top-L']} | {chessboard_dict['top-M']} | {chessboard_dict['top-R']}")
+        print(f"{board['top-L']} | {board['top-M']} | {board['top-R']}")
         print('--+---+--')
-        print(f"{chessboard_dict['mid-L']} | {chessboard_dict['mid-M']} | {chessboard_dict['mid-R']}")
+        print(f"{board['mid-L']} | {board['mid-M']} | {board['mid-R']}")
         print('--+---+--')
-        print(f"{chessboard_dict['low-L']} | {chessboard_dict['low-M']} | {chessboard_dict['low-R']}")
+        print(f"{board['low-L']} | {board['low-M']} | {board['low-R']}")
 
     # a function to print the guide board
     def guideBoard():
@@ -88,7 +88,7 @@ def main():
     # checks every space to increse efficiency in selecting available
     # spaces of enemy
     def ticPlaces():
-        for key, value in chessboard_dict.items():
+        for key, value in board.items():
             if value == "X" or value == "O":
                 ticPlace.remove(key)
 
@@ -115,7 +115,7 @@ def main():
             if input_validator(turn_x) == 1:
                 continue 
 
-            chessboard_dict[turn_x] = "X"
+            board[turn_x] = "X"
             X = False
         
         elif not X:
@@ -127,7 +127,7 @@ def main():
                 if input_validator(turn_o) == 1:
                     continue 
 
-                chessboard_dict[turn_o] = "O"
+                board[turn_o] = "O"
                 X = True
 
             else:  
@@ -136,7 +136,7 @@ def main():
                 if input_validator(turn_o) == 1:
                     continue 
 
-                chessboard_dict[turn_o] = "O"
+                board[turn_o] = "O"
                 X = True   
 
         # if there's a winner either X or O, the loop breaks
@@ -146,7 +146,7 @@ def main():
         # breaks the loop if the board is completed with values and
         # it's a tie
         numberOfOccupants = 0
-        for value in chessboard_dict.values():
+        for value in board.values():
             if value != ' ':
                 numberOfOccupants += 1
         
