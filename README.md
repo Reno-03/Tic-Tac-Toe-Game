@@ -33,11 +33,11 @@ The computer uses random moves from available spaces — not strategic, but simp
 1. **Run the script**:
    ```bash
    python tictactoe.py
-````
+   ```
 
-2. Choose whether your opponent is **AI** (`y`) or another **player** (`n`).
+2. **Choose whether your opponent is **AI** (`y`) or another **player** (`n`)**.
 
-3. Use the following guide for choosing positions:
+3. **Use the following guide for choosing positions:**
 
    ```
    'top-L' | 'top-M' | 'top-R'
@@ -47,19 +47,15 @@ The computer uses random moves from available spaces — not strategic, but simp
    'low-L' | 'low-M' | 'low-R'
    ```
 
-4. Take turns placing X and O until one player wins or all spaces are filled.
+4. **Take turns placing X and O until one player wins or all spaces are filled.**
 
 ---
 
 ## 📸 Demo
 
-If you have a GIF demo, you can add it here:
-
 ```markdown
 ![Tic Tac Toe Demo](screenshots/demo.gif)
 ```
-
-Make sure your demo GIF is inside the `screenshots/` folder of the repo.
 
 ---
 
