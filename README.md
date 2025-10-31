@@ -83,7 +83,7 @@ tictactoe/
 
 ---
 
-## 🪪 License
+## 🔑 License
 
 This project is licensed under the [MIT License](LICENSE).
 You’re free to use, modify, and share it for learning purposes.
@@ -93,6 +93,8 @@ You’re free to use, modify, and share it for learning purposes.
 ## 👤 Author
 
 Loreen Wilmer Yboa
+
 💼 Personal / Learning Project
+
 📘 Exploring Python, Logic Building, and Console Applications
 
