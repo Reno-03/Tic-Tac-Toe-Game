@@ -5,6 +5,12 @@ This project was created as a personal learning exercise to explore Python funda
 
 ---
 
+## 📸 Demo
+
+![Tic-Tac-Toe-Game](screenshots/demo.gif)
+
+---
+
 ## 🧠 About the Project
 
 This version of Tic Tac Toe uses a **dictionary-based board**, where each key represents a position on the 3×3 grid (like `"top-L"`, `"mid-M"`, etc.).  
@@ -48,12 +54,6 @@ The computer uses random moves from available spaces — not strategic, but simp
    ```
 
 4. **Take turns placing X and O until one player wins or all spaces are filled.**
-
----
-
-## 📸 Demo
-
-![Tic-Tac-Toe-Game](screenshots/demo.gif)
 
 ---
 
