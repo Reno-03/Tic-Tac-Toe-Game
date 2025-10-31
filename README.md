@@ -32,7 +32,7 @@ The computer uses random moves from available spaces — not strategic, but simp
 
 1. **Run the script**:
    ```bash
-   python tictactoe.py
+   python main.py
    ```
 
 2. **Choose whether your opponent is **AI** (`y`) or another **player** (`n`)**.
@@ -53,9 +53,7 @@ The computer uses random moves from available spaces — not strategic, but simp
 
 ## 📸 Demo
 
-```markdown
 ![Tic-Tac-Toe-Game](screenshots/demo.gif)
-```
 
 ---
 
@@ -75,7 +73,7 @@ This small project helped me practice:
 
 ```
 tictactoe/
-├── main.py          # main source file
+├── main.py               # main source file
 ├── README.md             # project documentation
 ├── LICENSE               # MIT License 
 └── screenshots/          # Demo GIF 
