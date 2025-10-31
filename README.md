@@ -75,10 +75,10 @@ This small project helped me practice:
 
 ```
 tictactoe/
-├── tictactoe.py          # main source file
+├── main.py          # main source file
 ├── README.md             # project documentation
-├── LICENSE               # optional (MIT recommended)
-└── screenshots/          # (optional demo GIF or images)
+├── LICENSE               # MIT License 
+└── screenshots/          # Demo GIF 
 ```
 
 ---
