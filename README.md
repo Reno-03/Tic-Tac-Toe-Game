@@ -54,7 +54,7 @@ The computer uses random moves from available spaces — not strategic, but simp
 ## 📸 Demo
 
 ```markdown
-![Tic Tac Toe Demo](screenshots/demo.gif)
+![Tic-Tac-Toe-Game](screenshots/demo.gif)
 ```
 
 ---
